@@ -8,20 +8,67 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <input type="text" id="km" name="km" placeholder="KM" class="form-control">
+        <div class="bg-danger">
+            <h1 class="text-uppercase text-center text-white pt-3">boolean express</h1>
+            <h3 class="text-uppercase text-center text-white my-4">calcola il prezzo del tuo Biglietto</h3>
+            <section class="top">
+                <div class="container bg-white rounded">
+                    <div class="row justify-content-center">
+                            <div class="col-3 text-center ">
+                                <label for="user" class="form-label text-danger mt-3">Nome e Cognome</label>
+                                <input type="text" id="user" name="user" class="form-control text_center border border-danger">
+                            </div>
+                            <div class="col-3 text-center">
+                                <label for="km" class="form-label text-danger mt-3">Distanza viaggio</label>
+                                <input type="text" id="km" name="km" class="form-control text_center border border-danger">
+                            </div>
+                            <div class="col-3 text-center">
+                                <label for="age" class="form-label text-danger mt-3">Fascia d'et&agrave;</label>
+                                <select class="form-select border border-danger" aria-label="age" id="age">
+                                    <option selected>Seleziona</option>
+                                    <option value="17">Minorenne</option>
+                                    <option value="19">Maggiorenne</option>
+                                    <option value="65">Over 65</option>
+                                </select>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="mt-5 mb-3 me-3 btn btn-warning bg_lightgrey submit">Genera</button>
+                                <button class="mt-5 mb-3 btn btn-warning bg_lightgrey undo">Annulla</button>
+                            </div>
                     </div>
-                    <div class="col-4">
-                        <input type="text" id="age" name="age" placeholder="ET&Agrave;" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <button class="btn btn-primary">Invia</button>
+                </div>            
+            </section>
+            <h3 class="text-uppercase text-center text-white mt-3">la tua prenotazione</h3>
+            <section>
+                <div class="container bg-white">
+                    <h4 class="text-uppercase pt-3 m-0">dettaglio passeggeri</h4>
+                    <div class="row">
+                        <!-- <p id="name-ticket"></p> -->
+                        <div class="col-12">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-uppercase pt-4 bg-secondary">nome passeggero</th>
+                                        <th scope="col">Offerta</th>
+                                        <th scope="col">Carrozza</th>
+                                        <th scope="col">Codice CP</th>
+                                        <th scope="col">Costo biglietto</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td id="name-ticket" class="bg-secondary fw-bold"></td>
+                                        <td id="pass"></th>
+                                        <td id="coach"></td>
+                                        <td id="cp"></td>
+                                        <td id="ticket"></td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <script src="./js/script.js"></script>
     </body>
