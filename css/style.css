@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.table th:nth-child(1){
-    width: 50%;
-}
 .text_center{
     text-align: center;
 }
